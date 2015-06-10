@@ -2,7 +2,7 @@ var app = angular.module('directivePractice');
 
 app.directive('dirDisplay', function(){
 	return {
-		templateUrl: 'app/dirTmpl.html',
+		templateUrl: 'app/directives/dirDisplay.html',
 		// restrict:
 		// scope: {}
 		link: function(scope, elem, attrs){
@@ -11,7 +11,6 @@ app.directive('dirDisplay', function(){
         // scope.setUser({user: scope.user});
         scope.$apply();
 			})
-			console.log(scope);
 		}
 	}
 })
